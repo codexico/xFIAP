@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="xFIAP.DetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:xFIAP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBlock Text="Produto"
+                       FontFamily="Impact"
+                       FontSize="23"
+                       Margin="20"
+                       HorizontalAlignment="Center"/>
+        
+        <StackPanel Margin="0,0,15,10">
+            <TextBlock x:Name="txtDescricao"></TextBlock>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Categoria: "></TextBlock>
+                <TextBlock x:Name="txtCategoria"></TextBlock>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Quantidade: "></TextBlock>
+                <TextBlock x:Name="txtQuantidade"></TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="R$ "></TextBlock>
+                <TextBlock x:Name="txtPrecounitario"></TextBlock>
+            </StackPanel>
+
+            <Button Content="Voltar ao Portfolio" x:Name="btnBack" Click="btnBack_Click" />
+
+        </StackPanel>
+    </Grid>
+</Page>
