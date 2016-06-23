@@ -1,5 +1,6 @@
 ﻿using System;
 using Windows.Data.Xml.Dom;
+using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -27,5 +28,31 @@ namespace xFIAP
         {
 
         }
+        
+        private async void OnBackRequested(object sender, BackRequestedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            e.Handled = true;
+
+            if (rootFrame.CanGoBack)
+            {
+                rootFrame.GoBack();
+            }
+            else
+            {
+                var messageDialog = new MessageDialog(
+                    "Tem certeza que deseja encerrar?", "Atenção");
+
+                messageDialog.Commands.Add(new UICommand("Sim"));
+                messageDialog.Commands.Add(new UICommand("Não"));
+
+                var result = await messageDialog.ShowAsync();
+                if (result.Label == "Sim")
+                {
+                    Application.Current.Exit();
+                }
+            }
+        }
+
     }
 }

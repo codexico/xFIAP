@@ -25,7 +25,7 @@ UWP final exam
  - Main Page
     - [x] link Portfolio
     - [x] link Clients
-    - [ ] confirm Exit on device Back
+    - [x] confirm Exit on device Back
     - [ ] (optional) Hello user
 
  - Portfolio
