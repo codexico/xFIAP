@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<usuarios>
+  <usuario>
+    <nome>Joao Silva</nome>
+    <username>Joao</username>
+    <password>joao123</password>
+  </usuario>
+  <usuario>
+    <nome>Maria Aparecida</nome>
+    <username>Maria</username>
+    <password>maria123</password>
+  </usuario>
+  <usuario>
+    <nome>Pedro Alves</nome>
+    <username>alves</username>
+    <password>alves123</password>
+  </usuario>
+  <usuario>
+    <nome>José Pereira</nome>
+    <username>pereira</username>
+    <password>pereira123</password>
+  </usuario>
+  <usuario>
+    <nome>Administrador</nome>
+    <username>admin</username>
+    <password>admin123</password>
+  </usuario>
+</usuarios>

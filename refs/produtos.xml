@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<produtos>
+  <produto id="1">
+    <descricao>Lavadora</descricao>
+    <categoria>Eletrodomésticos</categoria>
+    <quantidade>5</quantidade>
+    <precounitario>980</precounitario>
+  </produto>
+  <produto id="2">
+    <descricao>Refrigerador</descricao>
+    <categoria>Eletrodomésticos</categoria>
+    <quantidade>10</quantidade>
+    <precounitario>2000</precounitario>
+  </produto>
+  <produto id="3">
+    <descricao>IPad</descricao>
+    <categoria>Informática</categoria>
+    <quantidade>0</quantidade>
+    <precounitario>1800</precounitario>
+  </produto>
+  <produto id="4">
+	<descricao>Ultrabook</descricao>
+    <categoria>Informática</categoria>
+    <quantidade>0</quantidade>
+    <precounitario>2500</precounitario>
+  </produto>
+  <produto id="5">
+    <descricao>HP Slat</descricao>
+    <categoria>Informática</categoria>
+    <quantidade>3</quantidade>
+    <precounitario>1700</precounitario>
+  </produto>
+  <produto id="6">
+    <descricao>XBox One</descricao>
+    <categoria>Games</categoria>
+    <quantidade>30</quantidade>
+    <precounitario>3800</precounitario>
+  </produto>
+  <produto id="7">
+    <descricao>PS4</descricao>
+    <categoria>Games</categoria>
+    <quantidade>15</quantidade>
+    <precounitario>4000</precounitario>
+  </produto>
+  <produto id="8">
+    <descricao>XBox 360</descricao>
+    <categoria>Games</categoria>
+    <quantidade>3</quantidade>
+    <precounitario>890</precounitario>
+  </produto>
+  <produto id="9">
+    <descricao>iPhone 6</descricao>
+    <categoria>Informática</categoria>
+    <quantidade>8</quantidade>
+    <precounitario>2800</precounitario>
+  </produto>
+</produtos>
