@@ -81,11 +81,37 @@
                 </ComboBox>
                 
                 
-                <Button Content="Adicionar Visita" x:Name="btnVisita" Click="btnVisita_Click" 
+                <Button Content="Adicionar Visita" 
+                        x:Name="btnVisita" 
+                        Click="btnVisita_Click" 
                         HorizontalAlignment="Center" 
                         VerticalAlignment="Bottom"
                         />
             </StackPanel>
+
+            <StackPanel VerticalAlignment="Top" >
+                <TextBlock Text="Endereço"
+                           FontFamily="Impact"
+                           FontSize="23"
+                           Margin="20"
+                           HorizontalAlignment="Center"/>
+
+                <TextBlock Text="Local do cliente"
+                       Margin="15,0,0,5"
+                       HorizontalAlignment="Left"/>
+                <TextBox x:Name="txtAddress" 
+                     Margin="10,0,10,20"
+                     PlaceholderText="Endereço" />
+
+                <Button Content="Traçar Rota" 
+                        x:Name="btnRoute" 
+                        Click="btnRoute_Click" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Bottom"
+                        />
+            </StackPanel>
+
+
         </StackPanel>
 
     </Grid>
