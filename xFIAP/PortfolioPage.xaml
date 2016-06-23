@@ -9,18 +9,20 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <StackPanel Orientation="Vertical">
-            <Button x:Name="btnBack" Content="início" 
-                    HorizontalAlignment="Left"
-                    Click="btnBack_Click"/>
+        <StackPanel VerticalAlignment="Top" >
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="btnBack" Content="início" 
+                        HorizontalAlignment="Left"
+                        Click="btnBack_Click"/>
             
-            <TextBlock Text="Portfolio"
-                       FontFamily="Impact"
-                       FontSize="23"
-                       Margin="10"
-                       HorizontalAlignment="Center"/>
+                <TextBlock Text="Portfolio"
+                           FontFamily="Impact"
+                           FontSize="23"
+                           Margin="10"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
         </StackPanel>
-        
+
         <StackPanel Orientation="Vertical" Margin="10, 100, 10, 20">
             <ListView x:Name="PortfolioList"
                       SelectionChanged="PortfolioList_SelectionChanged"

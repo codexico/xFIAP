@@ -72,5 +72,10 @@ namespace xFIAP
                     appointment, 
                     Windows.Foundation.Rect.Empty);
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

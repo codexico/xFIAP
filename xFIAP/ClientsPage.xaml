@@ -9,13 +9,22 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
+            
             <StackPanel VerticalAlignment="Top" >
-                <TextBlock Text="Clientes"
-                           FontFamily="Impact"
-                           FontSize="23"
-                           Margin="20"
-                           HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnBack" Content="início" 
+                    HorizontalAlignment="Left"
+                            Click="btnBack_Click"
+                    />
+
+                    <TextBlock Text="Clientes"
+                       FontFamily="Impact"
+                       FontSize="23"
+                       Margin="0,0,0,10"
+                       HorizontalAlignment="Center"/>
+                </StackPanel>
             </StackPanel>
+            
             <StackPanel VerticalAlignment="Top" >
                 <TextBlock Text="Visita"
                            FontFamily="Impact"
