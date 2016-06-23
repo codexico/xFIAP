@@ -43,8 +43,8 @@ UWP final exam
     - [x] back button
 
  - Clients
-    - [ ] form add calendar event (name, location, date, time, duration)
-    - [ ] add calendar event function
+    - [x] form add calendar event (name, location, date, time, duration)
+    - [x] add calendar event function
     - [ ] form adrress
     - [ ] show route on map
     - [ ] back button

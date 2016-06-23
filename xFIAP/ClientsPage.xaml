@@ -1,0 +1,83 @@
+﻿<Page
+    x:Class="xFIAP.ClientsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:xFIAP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <StackPanel VerticalAlignment="Top" >
+                <TextBlock Text="Clientes"
+                           FontFamily="Impact"
+                           FontSize="23"
+                           Margin="20"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top" >
+                <TextBlock Text="Visita"
+                           FontFamily="Impact"
+                           FontSize="23"
+                           Margin="20"
+                           HorizontalAlignment="Center"/>
+
+
+                <TextBlock Text="Nome do evento"
+                       Margin="15,0,0,5"
+                       HorizontalAlignment="Left"/>
+                <TextBox x:Name="txtName" 
+                     Margin="10,0,10,20"
+                     PlaceholderText="Nome"
+                         MaxLength="255"
+                         />
+
+                <TextBlock Text="Local da visita"
+                       Margin="15,0,0,5"
+                       HorizontalAlignment="Left"/>
+                <TextBox x:Name="txtLocal" 
+                     Margin="10,0,10,20"
+                     PlaceholderText="Local ou endereço" />
+
+
+                <TextBlock Text="Dta da visita"
+                       Margin="15,0,0,5"
+                       HorizontalAlignment="Left"/>
+                <DatePicker 
+                    Margin="10,0,10,20"
+                    x:Name="StartTimeDatePicker"
+                    />
+
+                
+                <TextBlock Text="Horário da visita"
+                       Margin="15,0,0,5"
+                       HorizontalAlignment="Left"/>
+                <TimePicker
+                    x:Name="StartTimeTimePicker"
+                    Margin="10,0,10,20"
+                    />
+
+
+                <TextBlock Text="Duração da visita"
+                       Margin="15,0,0,5"
+                       HorizontalAlignment="Left"/>
+                <ComboBox x:Name="DurationComboBox" SelectedIndex="1"
+                          Margin="10,0,10,20"
+                          >
+                    <ComboBoxItem x:Name="duration30">30 Minutos</ComboBoxItem>
+                    <ComboBoxItem x:Name="duration60">1 Hora</ComboBoxItem>
+                    <ComboBoxItem x:Name="duration120">2 Horas</ComboBoxItem>
+                    <ComboBoxItem x:Name="duration240">4 Horas</ComboBoxItem>
+                </ComboBox>
+                
+                
+                <Button Content="Adicionar Visita" x:Name="btnVisita" Click="btnVisita_Click" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Bottom"
+                        />
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

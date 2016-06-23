@@ -26,7 +26,7 @@ namespace xFIAP
 
         private void btnClientes_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(ClientsPage));
         }
         
         private async void OnBackRequested(object sender, BackRequestedEventArgs e)
